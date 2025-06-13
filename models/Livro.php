@@ -11,17 +11,7 @@ class Livro
         public $titulo;
         public $autor;
         public $descricao;
-
-        public static function make($item)
-        {
-
-                $livro = new self();
-
-                $livro->id = $item['id'];
-                $livro->titulo = $item['titulo'];
-                $livro->autor = $item['autor'];
-                $livro->descricao = $item['descricao'];
-
-                return $livro;
-        }
+        public $usuario_id;
+        public $ano_de_lancamento;
+        public $imagem;
 }
