@@ -1,7 +1,7 @@
 <?php
 
 $pesquisa = $_REQUEST['pesquisar'] ?? '';
-$livros = $DataBase->query(
+$livros = $database->query(
         query: "SELECT * FROM livros WHERE titulo LIKE :filtro",
         class: Livro::class,
         params: ['filtro' => "%$pesquisa%"]

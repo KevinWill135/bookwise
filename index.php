@@ -1,11 +1,21 @@
 <?php
 
-require "functions.php";
-
 require "models/Livro.php";
 
-$config = require 'config.php';
+require "models/Usuario.php";
 
-require "database.php";
+require 'models/Avaliacao.php';
+
+
+session_start();
+
+
+require "functions.php";
+
+require 'Validacao.php';
+
+require 'Flash.php';
+
+require "Database.php";
 
 require "routes.php";
