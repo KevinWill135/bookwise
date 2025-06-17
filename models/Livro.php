@@ -14,4 +14,6 @@ class Livro
         public $usuario_id;
         public $ano_de_lancamento;
         public $imagem;
+        public $notaAvaliacao;
+        public $countAvaliacoes;
 }
