@@ -1,4 +1,4 @@
-<h2><?= $livro->titulo ?></h2>
+<h2 class="text-lg font-bold"><?= $livro->titulo ?></h2>
 
 <?php require_once 'partials/_livro.php'; ?>
 

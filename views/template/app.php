@@ -47,7 +47,7 @@
                 <!-- LIVROS -->
 
                 <div>
-                        <?php require "views/{$view}.view.php"; ?>
+                        <?php require "../views/{$view}.view.php"; ?>
                 </div>
 
 

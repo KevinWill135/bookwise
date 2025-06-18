@@ -5,6 +5,6 @@ if (!auth()) {
         exit;
 }
 
-$livros = $database->query("SELECT * FROM livros WHERE usuario_id = :id", Livro::class, ['id' => auth()->id])->fetchAll();
+$livros = Livro::meusLivros(auth()->id);
 
 views('meus-livros', compact('livros'));
